@@ -9,6 +9,7 @@ public:
     for(auto & item1: list) {
       for(auto & item2: list) {
         if(item1 + item2 == sum) {
+          // Print indexes
           return std::make_pair (&item1 - &list[0], &item2 - &list[0]);
         }
       }
